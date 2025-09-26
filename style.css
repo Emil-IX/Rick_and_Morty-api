@@ -8,6 +8,9 @@ body {
 color: white;
 font-family: sans-serif;
 text-align: center;
+margin-bottom: 4rem;
+background-color: black;
+padding: 5px 0 30px;
 
 }
 
@@ -19,6 +22,7 @@ label {
 
 
 #container_one {
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -27,6 +31,10 @@ label {
     padding: 25px  20px 60px 20px;
     border-radius: 5px;
     border: 3px rgba(255, 255, 255, 0.233) solid;
+}
+
+.img1 {
+    margin-bottom: 15px;
 }
 
 .button {
