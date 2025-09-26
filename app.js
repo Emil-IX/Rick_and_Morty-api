@@ -6,7 +6,7 @@ const button = document.getElementById('button')
 
 let charaters = []
 let currenPage = 1
-let itemsPerPage = 10
+let itemsPerPage = 12
 let totalPage = 1
 
 
