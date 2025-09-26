@@ -21,7 +21,7 @@ button.addEventListener('click', () => {
     getApi(input1, input2)
 })
 
-const getApi = async (base = 1, limit = 2) => {
+const getApi = async (base = 1, limit = 40) => {
     charaters = []
 
     const ids = []
@@ -30,7 +30,7 @@ const getApi = async (base = 1, limit = 2) => {
     for (i = base; i <= limit; i++) {
         ids.push(i)
     }
-    
+
     const res = await fetch(`https://rickandmortyapi.com/api/character/${ids}`)
     const data = await res.json()
 

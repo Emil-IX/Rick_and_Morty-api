@@ -1,38 +1,54 @@
-
 body {
-    background: url("image/x498howiltl71.gif");
-    
+    background: url("image/XLYZwN.gif");
+
 }
 
 
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.setction--img {
+    width: 500px;
+}
 
 .titulo2 {
-color: white;
-font-family: sans-serif;
-text-align: center;
-margin-bottom: 4rem;
-background-color: black;
-padding: 5px 0 30px;
-
-}
-
-label {
     color: white;
-    font-weight: 900;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 4rem;
+    background-color: black;
+    align-items: center;
+    padding: 1em;
 }
+
+
 
 
 #container_one {
+    color: white;
     margin: 1rem;
     display: flex;
     flex-direction: column;
     width: 300px;
     gap: 5px;
+    background: url('image/x498howiltl71.gif');
+    background-position: top;
+    background-size: 8rem;
+    background-repeat: no-repeat;
     background-color: black;
-    padding: 25px  20px 60px 20px;
+    padding: 25px 20px 60px 20px;
     border-radius: 5px;
     border: 3px rgba(255, 255, 255, 0.233) solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 20px rgba(38, 255, 0, 0.7);
+    border: 1px solid rgba(44, 176, 44, 0.856);
+
 }
 
 .img1 {
@@ -41,16 +57,17 @@ label {
 
 .button {
     margin-top: 10px;
-    color:white;
+    color: white;
     background-color: red;
-    padding: 5px ;
-    
+    padding: 5px;
+
 }
 
 
 
+
 .card {
- 
+
     display: inline-block;
     width: 200px;
     background-color: rgb(33, 29, 35);
@@ -61,7 +78,10 @@ label {
     margin: 20px;
 
 
+
 }
+
+
 
 .card :nth-child(2) {
 
@@ -80,7 +100,7 @@ label {
     width: 90%;
     border-radius: 50%;
     margin: 10px;
-    
+
 }
 
 #pagination {
