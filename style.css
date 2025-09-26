@@ -1,7 +1,9 @@
 
 body {
     background: url("image/x498howiltl71.gif");
+    
 }
+
 
 
 .titulo2 {
@@ -79,4 +81,24 @@ label {
     border-radius: 50%;
     margin: 10px;
     
+}
+
+#pagination {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    margin-top: 2rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttonse {
+    color: white;
+    background-color: rgb(32, 156, 61);
+    padding: 5px 15px;
+}
+
+.buttonse:disabled {
+    color: rgba(255, 255, 255, 0.549);
+    background-color: rgba(0, 128, 0, 0.297);
 }
