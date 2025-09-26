@@ -22,15 +22,19 @@ button.addEventListener('click', () => {
 })
 
 const getApi = async (base = 1, limit = 2) => {
-
     charaters = []
-    for (base; base <= limit; base++) {
 
-        const res = await fetch(`https://rickandmortyapi.com/api/character/${base}`)
-        const data = await res.json()
+    const ids = []
 
-        charaters.push(data)
+
+    for (i = base; i <= limit; i++) {
+        ids.push(i)
     }
+    
+    const res = await fetch(`https://rickandmortyapi.com/api/character/${ids}`)
+    const data = await res.json()
+
+    charaters = data
 
     totalPage = Math.ceil(charaters.length / itemsPerPage)
     currenPage = 1
