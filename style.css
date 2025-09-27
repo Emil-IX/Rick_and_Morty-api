@@ -71,20 +71,27 @@ section {
 
 }
 
+.button:hover {
+    background-color: rgb(188, 9, 9);
+
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
 
 
 .card {
-
-    display: inline-block;
     width: 200px;
+    padding: 30px 50px;
     background-color: rgb(33, 29, 35);
     color: white;
     font-family: monospace;
-    padding: 30px 50px;
     border-radius: 5px;
     margin: 20px;
-
-
 
 }
 
