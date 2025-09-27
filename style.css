@@ -1,5 +1,13 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background: url("image/XLYZwN.gif");
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -120,4 +128,12 @@ section {
 .buttonse:disabled {
     color: rgba(255, 255, 255, 0.549);
     background-color: rgba(0, 128, 0, 0.297);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 5em;
 }
