@@ -39,6 +39,7 @@ section {
 
 
 #container_one {
+    padding: 25px 25px 60px 20px;
     color: white;
     margin: 1rem;
     display: flex;
@@ -50,12 +51,12 @@ section {
     background-size: 8rem;
     background-repeat: no-repeat;
     background-color: black;
-    padding: 25px 20px 60px 20px;
     border-radius: 5px;
     border: 3px rgba(255, 255, 255, 0.233) solid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0 0 20px rgba(38, 255, 0, 0.7);
     border: 1px solid rgba(44, 176, 44, 0.856);
+    justify-content: center;
 
 }
 
@@ -118,8 +119,9 @@ section {
 }
 
 #pagination {
+    width: 20rem;
     display: flex;
-    gap: 7px;
+    gap: 2px;
     justify-content: center;
     margin-top: 2rem;
     color: white;
@@ -129,7 +131,7 @@ section {
 .buttonse {
     color: white;
     background-color: rgb(32, 156, 61);
-    padding: 5px 15px;
+    
 }
 
 .buttonse:disabled {
@@ -145,7 +147,20 @@ footer {
     margin-top: 5em;
 }
 
+#paginaion {
+width: 20rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.buttonN {
+    padding: 1px 4px;
+}
+
 .btblack {
     background-color:rgb(0, 0, 0);
     color: white;
 }
+

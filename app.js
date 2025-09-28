@@ -128,10 +128,20 @@ const updatePageinfo = () => {
         start = Math.max(1, end - maxBtn + 1)
     }
 
+    if (start > 1) {
+        pageInfo.innerHTML += `<button class="buttonN" value="1">1</button>`;
+        if (start > 2) pageInfo.innerHTML += `<span>...</span>`; 
+    }
+
     for (let b = start; b <= end; b++) {
         pageInfo.innerHTML += `
          <button class="buttonN" value="${b}">${b}</button>
         `
+    }
+
+    if (end < totalPage) {
+        if (end < totalPage - 1) pageInfo.innerHTML += `<span>...</span>`;
+        pageInfo.innerHTML += `<button class="buttonN" value="${totalPage}">${totalPage}</button>`;
     }
 
     const btSelected = document.getElementsByClassName('buttonN');
