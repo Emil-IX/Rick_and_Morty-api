@@ -2,6 +2,7 @@
 
 
 const button = document.getElementById('button')
+const pageInfo = document.getElementById("pageInfo")
 
 
 let charaters = []
@@ -93,9 +94,46 @@ document.getElementById("end").addEventListener("click", () => {
 })
 
 
+pageInfo.addEventListener('click', (e) => {
+    if (e.target.classList.contains("buttonN")) {
+
+        currenPage = parseInt(e.target.value,10)
+        renderPages(currenPage)
+        updatePageinfo()
+
+    }
+})
+
+
 
 const updatePageinfo = () => {
-    document.getElementById("pageInfo").textContent = `Page ${currenPage} of ${totalPage}`
+    //document.getElementById("pageInfo").textContent = `Page ${currenPage} of ${totalPage}`
+
+    pageInfo.innerHTML = ""
+
+    const maxBtn = 5
+    const half = Math.floor(maxBtn / 2)
+
+    let start = currenPage - half
+    let end = currenPage + half
+
+    if (start < 1) {
+        start = 1
+        end = Math.min(totalPage, start + maxBtn - 1)
+    }
+
+
+    if (end > totalPage) {
+        end = totalPage
+        start = Math.max(1, end - maxBtn + 1)
+    }
+
+    for (let b = start; b <= end; b++) {
+        pageInfo.innerHTML += `
+         <button class="buttonN" value="${b}">${b}</button>
+        
+        `
+    }
 }
 
 
