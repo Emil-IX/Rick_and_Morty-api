@@ -131,9 +131,18 @@ const updatePageinfo = () => {
     for (let b = start; b <= end; b++) {
         pageInfo.innerHTML += `
          <button class="buttonN" value="${b}">${b}</button>
-        
         `
     }
+
+    const btSelected = document.getElementsByClassName('buttonN');
+
+for (let btn of btSelected) {
+    if (parseInt(btn.value, 10) === currenPage) {
+        btn.classList.add('btblack'); 
+    } else {
+        btn.classList.remove('btblack'); 
+    }
+}
 }
 
 
