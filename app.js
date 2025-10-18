@@ -10,7 +10,7 @@ let currenPage = 1
 let itemsPerPage = 12
 let totalPage = 1
 
-
+//sent values to start
 button.addEventListener('click', () => {
 
     const input1 = document.getElementById('input1').value
@@ -22,6 +22,7 @@ button.addEventListener('click', () => {
     getApi(input1, input2)
 })
 
+//api connection
 const getApi = async (base = 1, limit = 40) => {
     charaters = []
 
@@ -43,6 +44,7 @@ const getApi = async (base = 1, limit = 40) => {
     updatePageinfo()
 }
 
+//Fo create render in the dom
 const renderPages = (page) => {
 
     const container = document.getElementById('container')
@@ -75,6 +77,7 @@ const renderPages = (page) => {
 
 }
 
+//pagination controler
 document.getElementById("start").addEventListener("click", () => {
     if (currenPage > 1) {
         currenPage--
@@ -85,6 +88,7 @@ document.getElementById("start").addEventListener("click", () => {
     }
 })
 
+//pagination controler
 document.getElementById("end").addEventListener("click", () => {
     if (currenPage < totalPage) {
         currenPage++
@@ -93,7 +97,7 @@ document.getElementById("end").addEventListener("click", () => {
     }
 })
 
-
+//pagination controler
 pageInfo.addEventListener('click', (e) => {
     if (e.target.classList.contains("buttonN")) {
 
@@ -105,7 +109,7 @@ pageInfo.addEventListener('click', (e) => {
 })
 
 
-
+//Update page information
 const updatePageinfo = () => {
     //document.getElementById("pageInfo").textContent = `Page ${currenPage} of ${totalPage}`
 
@@ -156,5 +160,5 @@ for (let btn of btSelected) {
 }
 
 
-
+//start the proyect
 getApi()
